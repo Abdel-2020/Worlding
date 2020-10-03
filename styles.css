@@ -1,0 +1,49 @@
+h1, h2, h3 {
+  font-family: 'Raleway';
+}
+
+p {
+  font-family: 'Tajawal';
+}
+
+body {
+
+}
+
+.main-quote {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: 200;
+  padding: 90px 50px 0;
+
+}
+
+.main-video {
+  margin: 30px 0;
+}
+
+.my-story {
+
+  background-color: #eeeeee;
+  margin: 25px 10px 0;
+  padding: 40px;
+}
+
+.my-story-h3 {
+
+  font-size: 2rem;
+}
+
+.story-text {
+  text-align: justify;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.dumbbell-img{
+  padding: 0 80px 0 80px;
+}
+
+.dumbbell-img-text{
+text-align: center;
+}
