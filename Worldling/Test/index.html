@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -12,15 +12,17 @@
 </head>
 
 <body>
+
   <!-- Top Nav -->
   <div id="TopNav">
-    <h1 class="navbar-title"><a class="navbar-title"href="index.html">Worldling</a></h1>
+    <h1 class="navbar-title"><a class="navbar-title" href="WorldlingV2/index.html">Worldling</a></h1>
     <nav class="navbar">
-      <a class="navbar-text" href="how-to-change-yourself.html">How to change yourself</a>
+      <a class="navbar-text" href="WorldlingV2/how-to-change-yourself.html">How to change yourself</a>
       <a class="navbar-text" href="/css/">Resources</a>
       <a class="navbar-text" href="/js/">Contact me</a>
     </nav>
   </div>
+  <!--End of Top Nav -->
 
   <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
   <div id="Content-Video">
@@ -73,6 +75,8 @@
     }
 }*/
 
+
+
       function onPlayerStateChange(event) {
         var done = false;
         if (event.data == YT.PlayerState.PLAYING && !done) {
@@ -84,6 +88,11 @@
         }
 
       }
+
+
+
+
+
     /*function onPlayerStateChange(event) {
       if (event.data == YT.PlayerState.PLAYING) {
         mainQuote = document.getElementById("main-quote");
@@ -91,30 +100,32 @@
       }
     }*/
 
+
+
+
+
+
     function stopVideo() {
       player.stopVideo();
     }
   </script>
 
-  <!--End of Top Nav -->
+
+
+
+
 
   <!-- Content/Video
   <div id="Content-Video">
     <h2 id="main-quote"><em class="main-quote-text">“It is a disgrace to grow old through sheer carelessness before seeing what manner of man you may become by developing your bodily strength and beauty to their highest limit.”</em> - Socrates.</h2>
   </div>
   <iframe id="player" width="100%" height="100%" src="https://www.youtube.com/embed/S439e52OQSg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-End of Content/Video -->
 
-
-
+  <!--End of Content/Video -->
 
   <div id="My-Story">
 
-
-
     <div class="my-story-container">
-
-
 
       <div class="my-story-dumbbell">
         <img class="dumbbell-img" src="images/dumbbell.png" />
@@ -131,8 +142,7 @@ End of Content/Video -->
   </div>
 
 
-<script src ="index.js"></script>
+  <script src="index.js"></script>
 </body>
-
 
 </html>
