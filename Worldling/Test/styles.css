@@ -8,7 +8,7 @@
     font-weight: 500;
   }
 
-  p, em, .navbar-text {
+  p, .navbar-text {
     font-family: 'Tajawal';
   }
 
@@ -49,14 +49,10 @@
     background-color: rgba(238, 238, 238, 80%);
     padding: 10px 25px;
     font-weight: 200;
-    -webkit-transition: opacity 300ms ease-in-out;
-    -moz-transition:opacity 300ms ease-in-out;
-    -ms-transition:opacity 300ms ease-in-out;
-    -o-transition:opacity 300ms ease-in-out;
-    transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms; ease-in-out
   }
 
-  #main-quote.fade {
+#main-quote.fade {
   opacity: 0;
 }
 
@@ -67,16 +63,12 @@
 
   .my-story-container {
     margin-top: 55%;
-    width:90%;
-    margin: 55% 5% 0 5%;
     position: relative;
     display: flex;
   }
 
   .my-story {
     margin-left: 200px;
-
-
   }
 
   .story-text {
@@ -84,11 +76,10 @@
     text-align: justify;
     font-size: 1.75rem;
     font-weight: 300;
-
   }
 
   .dumbbell-img {
-
+    margin-left: 20%;
   }
 
   .img-caption-text {
@@ -97,7 +88,7 @@
 }
 
 /*---------------------------------------------------------------------------*/
-/*                             howtochangeyourself.html                      */
+/*                             howtochangeyourlife.html                      */
 /*---------------------------------------------------------------------------*/
 @media(min-width:768px) {
   .main-content-header {
@@ -123,14 +114,6 @@
     padding: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #f8f9fa;
-  }
-
-  .rule{
-    margin: 20px 33% 30px 33%;
-    width: 33%;
-    border: none;
-    border-top: 1px solid  #6d7e3c;
-
   }
 
   .main-content-container {
@@ -187,17 +170,7 @@
     font-weight: 300;
     text-align: center;
   }
-
-}
-
-/*---------------------------------------------------------------------------*/
-/*                             habitreform.html                              */
-/*---------------------------------------------------------------------------*/
-@media(min-width:768px) {
-.habit-list{
-  list-style: none;
-  text-align: left;
-  margin-left: 30px;
-}
-
+  p > em{
+    color: #6d7e3c;
+  }
 }
