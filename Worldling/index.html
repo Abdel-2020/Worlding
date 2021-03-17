@@ -46,7 +46,7 @@
       player = new YT.Player('player', {
         height: '100%',
         width: '100%',
-        videoId: 'S439e52OQSg',
+        videoId: '2bguEiUgDA4',
         events: {
           'onReady': onPlayerReady,
           'onStateChange': onPlayerStateChange
@@ -73,17 +73,32 @@
     }
 }*/
 
-      function onPlayerStateChange(event) {
+    /*  function onPlayerStateChange(event) {
         var done = false;
         if (event.data == YT.PlayerState.PLAYING && !done) {
             let fade = document.getElementById("main-quote");
             fade.classList.toggle('fade');
-        } else if (event.data == YT.PlayerState.PAUSED && !done){
+            done = true;
+        }
+      } */
+
+
+      function onPlayerStateChange(event) {
+        var done = false;
+        if (event.data == YT.PlayerState.PAUSED && !done){
+          let fade = document.getElementById("main-quote");
           fade.classList.toggle('fade');
           done = true;
-        }
-
+        } else if (event.data == YT.PlayerState.PLAYING && !done) {
+            let fade = document.getElementById("main-quote");
+            fade.classList.toggle('fade');
+            done = true;
       }
+    }
+
+
+
+
     /*function onPlayerStateChange(event) {
       if (event.data == YT.PlayerState.PLAYING) {
         mainQuote = document.getElementById("main-quote");
@@ -93,6 +108,7 @@
 
     function stopVideo() {
       player.stopVideo();
+      fade.classList.toggle('fade');
     }
   </script>
 
